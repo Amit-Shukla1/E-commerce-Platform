@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+   <!-- Custom CSS -->
+  <link rel="stylesheet" href="Style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    // Function to load header and footer
+    $(function () {
+      // Load header
+      $("#header").load("components/header.html");
+      // Load footer
+      $("#footer").load("components/footer.html");
+    });
+  </script>
+</head>
+<body>
+
+<div id="header"></div>
+<!-- Shopping Cart -->
+
+<div class="cart-container">
+    <div class="item-details">
+      <h2>Item Name</h2>
+      <p>Price: $10.00</p>
+      <div class="button-group">
+        <button>-</button>
+        <span>1</span>
+        <button>+</button>
+      </div>
+    </div>
+    <div class="item-summary">
+      <h2>Summary</h2>
+      <p>Cost: $10.00</p>
+      <p>Shipping Price: $5.00</p>
+      <p>Total: $15.00</p>
+      <button class="checkout-button">Checkout</button>
+    </div>
+  </div>
+
+</body>
+
+<div id="footer"></div>
+
